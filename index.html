@@ -10,122 +10,150 @@
     body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
+
 <body class="bg-gradient-to-b from-gray-100 to-white text-gray-800">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Nightshift Studio</h1>
+<!-- NAV -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-xl">Nightshift Studio</h1>
 
-      <nav class="hidden md:flex gap-8 text-gray-600">
-        <a href="#apps" class="hover:text-blue-600">Apps</a>
-        <a href="#privacy" class="hover:text-blue-600">Datenschutz</a>
-        <a href="#contact" class="hover:text-blue-600">Kontakt</a>
-      </nav>
+    <nav class="hidden md:flex gap-8 text-gray-600">
+      <a href="#apps" class="hover:text-blue-600">Apps</a>
+      <a href="#" class="hover:text-blue-600">Datenschutz</a>
+      <a href="#" class="hover:text-blue-600">Kontakt</a>
+    </nav>
 
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
-    </div>
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 space-y-2">
-      <a href="#apps" class="block">Apps</a>
-      <a href="#privacy" class="block">Datenschutz</a>
-      <a href="#contact" class="block">Kontakt</a>
-    </div>
-  </header>
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 space-y-2">
+    <a href="#apps" class="block">Apps</a>
+    <a href="#" class="block">Datenschutz</a>
+    <a href="#" class="block">Kontakt</a>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-    
-    <div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-        Moderne Apps <br> für deinen Alltag
-      </h2>
-      <p class="text-gray-600 mb-6">
-        Wir entwickeln performante und intuitive Android Apps.
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
-        Unsere Apps
-      </button>
-    </div>
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
 
-    <div class="flex justify-center">
-      <img 
-        src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?q=80&w=600" 
-        class="w-72 h-72 object-contain rounded-xl shadow-lg"
-        alt="App Logo"
-      />
-    </div>
-  </section>
+  <div>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Moderne Apps <br> für deinen Alltag
+    </h2>
 
-  <!-- About -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h3 class="text-2xl font-bold mb-4">Über uns</h3>
-    <p class="text-gray-600 max-w-2xl">
-      Nightshift Studio ist ein unabhängiges App-Studio mit Fokus auf Performance,
-      Nutzerfreundlichkeit und modernes Design. Wir bauen Apps, die deinen Alltag
-      einfacher machen.
+    <p class="text-gray-600 mb-6">
+      Wir entwickeln mit Leidenschaft durchdachte Android Apps.
     </p>
-  </section>
 
-  <!-- Apps -->
-  <section id="apps" class="max-w-6xl mx-auto px-6 py-12">
-    <h3 class="text-2xl font-bold mb-8">Unsere Apps</h3>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-        <div class="h-32 bg-gray-200 rounded mb-4"></div>
-        <h4 class="font-semibold mb-2">App 1</h4>
-        <p class="text-gray-600 text-sm">Kurzbeschreibung deiner App.</p>
+    <!-- COMING SOON BOX -->
+    <div class="border border-blue-200 bg-blue-50 rounded-xl p-5 mb-6">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-full">
+          &lt;/&gt;
+        </div>
+        <div class="font-semibold">Erste App in Entwicklung</div>
       </div>
+      <p class="text-sm text-gray-600">
+        Release in Kürze – bleib dran 🚀
+      </p>
+    </div>
 
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-        <div class="h-32 bg-gray-200 rounded mb-4"></div>
-        <h4 class="font-semibold mb-2">App 2</h4>
-        <p class="text-gray-600 text-sm">Kurzbeschreibung deiner App.</p>
-      </div>
+    <!-- CTA GROUP -->
+    <div class="flex flex-col sm:flex-row gap-3">
 
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-        <div class="h-32 bg-gray-200 rounded mb-4"></div>
-        <h4 class="font-semibold mb-2">App 3</h4>
-        <p class="text-gray-600 text-sm">Kurzbeschreibung deiner App.</p>
-      </div>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+        🔔 Benachrichtigung erhalten
+      </button>
+
+      <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg">
+        🧪 Für internen Test anmelden
+      </button>
 
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-gray-50 mt-16 py-10">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-      
-      <div>
-        <h4 class="font-semibold mb-2">Kontakt</h4>
-        <p class="text-gray-600">Email: deine@email.de</p>
-      </div>
-
-      <div>
-        <h4 class="font-semibold mb-2">Impressum</h4>
-        <p class="text-gray-600">
-          Dein Name <br>
-          Straße 1 <br>
-          12345 Stadt
-        </p>
-      </div>
-
+    <!-- SCROLL -->
+    <div class="mt-6 text-blue-600 text-sm">
+      ↓ Nach unten scrollen
     </div>
-  </footer>
+  </div>
 
-  <!-- Script -->
-  <script>
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
+  <!-- IMAGE -->
+  <div class="flex justify-center">
+    <img 
+      src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?q=80&w=600"
+      class="w-72 h-72 object-contain rounded-xl shadow-lg"
+    />
+  </div>
 
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+</section>
+
+<!-- WHY SECTION -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <h3 class="text-2xl font-bold mb-8 text-center">
+    Warum Nightshift Studio?
+  </h3>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <div class="text-2xl mb-2">⚡</div>
+      <h4 class="font-semibold">Performance</h4>
+      <p class="text-gray-600 text-sm">Schnell & effizient</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <div class="text-2xl mb-2">💙</div>
+      <h4 class="font-semibold">Design</h4>
+      <p class="text-gray-600 text-sm">Modern & intuitiv</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <div class="text-2xl mb-2">🔒</div>
+      <h4 class="font-semibold">Privacy First</h4>
+      <p class="text-gray-600 text-sm">Deine Daten zählen</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPS -->
+<section id="apps" class="max-w-6xl mx-auto px-6 py-12 text-center">
+
+  <h3 class="text-2xl font-bold mb-4">Unsere Apps</h3>
+
+  <p class="text-gray-600 mb-6">
+    App 1 · <span class="text-blue-600 font-semibold">Coming Soon</span>
+  </p>
+
+  <p class="text-gray-600 mb-6">
+    Eine Produktivitäts-App für deinen Alltag
+  </p>
+
+  <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">
+    🔔 Benachrichtigung erhalten
+  </button>
+
+  <p class="text-sm text-gray-500 mt-3">
+    Wir informieren dich beim Release
+  </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-50 mt-16 py-8 text-center text-gray-600 text-sm">
+  © 2024 Nightshift Studio · Impressum · Datenschutz · Kontakt
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
